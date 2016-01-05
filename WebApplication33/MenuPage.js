@@ -8,7 +8,7 @@ function name() {
 
     if (happyHour === hour) {
         for (var i = 0; i < nowPrice.length; i++) {
-            nowPrice[i].innerHTML = +nowPrice[i].innerHTML * +0.9;            
+            nowPrice[i].innerHTML = +nowPrice[i].innerHTML * +0.9.toFixed(2);
         }                
     }
 }
