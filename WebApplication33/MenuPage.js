@@ -1,6 +1,6 @@
 ﻿//happy hour logic:
 
-function name() {
+function HappyHour() {
     var date = new Date();
     var hour = date.getHours();
     var happyHour = 15;    
@@ -12,16 +12,21 @@ function name() {
         }                
     }
 }
-
-document.getElementsByClassName('price').innerHTML = name();
-
+document.getElementsByClassName('price').innerHTML = HappyHour();
 
 //Method calls:
-
 
 //Adjust price function: (add .toFixed(2) for 2 decimals)
 
 /*Add pictures function to span:*/
+function Picture() {
+    var pic = document.getElementsByTagName('span');
+    for (var i = 0; i < pic.length; i++) {
+        pic[i].innerHTML = "<img src='Images/Hamburger.png'/>";
+    }
+}
+
+document.getElementsByTagName('span').innerHTML = Picture();
 
 /*Add todays offer function. 
 Make price background red. 
