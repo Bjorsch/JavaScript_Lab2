@@ -1,4 +1,13 @@
 ﻿//happy hour logic:
+var date = new Date();
+var happyHour = 18;
+var hour = Date.getHours();
+
+if (happyHour === hour) {
+    function name(parameters) {
+        
+    }
+}
 
 //Method calls:
 
