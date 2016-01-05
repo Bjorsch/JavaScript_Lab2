@@ -1,13 +1,20 @@
 ﻿//happy hour logic:
-var date = new Date();
-var happyHour = 18;
-var hour = Date.getHours();
 
-if (happyHour === hour) {
-    function name(parameters) {
-        
+function name() {
+    var date = new Date();
+    var hour = date.getHours();
+    var happyHour = 15;    
+    var nowPrice = document.getElementsByClassName('price');
+
+    if (happyHour === hour) {
+        for (var i = 0; i < nowPrice.length; i++) {
+            nowPrice[i].innerHTML = +nowPrice[i].innerHTML * +0.9;            
+        }                
     }
 }
+
+document.getElementsByClassName('price').innerHTML = name();
+
 
 //Method calls:
 
