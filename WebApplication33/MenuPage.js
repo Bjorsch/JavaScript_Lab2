@@ -3,7 +3,7 @@
 function HappyHour() {
     var date = new Date();
     var hour = date.getHours();
-    var happyHour = 10;
+    var happyHour = 23;
     
     var nowPrice = document.getElementsByClassName('price');
     if (happyHour === hour) {
@@ -12,6 +12,7 @@ function HappyHour() {
         }
     }
 }
+
 document.getElementsByClassName('price').innerHTML = HappyHour();
 //Method calls:
 //Adjust price function: (add .toFixed(2) for 2 decimals)
