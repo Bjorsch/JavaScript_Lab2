@@ -3,21 +3,18 @@
 function HappyHour() {
     var date = new Date();
     var hour = date.getHours();
-    var happyHour = 15;    
+    var happyHour = 10;
+    
     var nowPrice = document.getElementsByClassName('price');
-
     if (happyHour === hour) {
         for (var i = 0; i < nowPrice.length; i++) {
-            nowPrice[i].innerHTML = +nowPrice[i].innerHTML * +0.9.toFixed(2);
-        }                
+            nowPrice[i].innerHTML = (nowPrice[i].innerHTML * Number(0.9)).toFixed(2);
+        }
     }
 }
 document.getElementsByClassName('price').innerHTML = HappyHour();
-
 //Method calls:
-
 //Adjust price function: (add .toFixed(2) for 2 decimals)
-
 /*Add pictures function to span:*/
 function Picture() {
     var pic = document.getElementsByTagName('span');
@@ -25,12 +22,31 @@ function Picture() {
         pic[i].innerHTML = "<img src='Images/Hamburger.png'/>";
     }
 }
-
 document.getElementsByTagName('span').innerHTML = Picture();
 
 /*Add todays offer function. 
 Make price background red. 
 Reduce price by another 20%:*/
+WeekdayOffer();
+
+function WeekdayOffer() {
+    var theDayOffer = 0.8;
+    var date = new Date().getDay();
+    var weekday = ['sunday', 'monday', 'tuseday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    
+    for (var i = 0; i < weekday.length; i++) {
+        if (date === i) {
+            var startPrice = document.getElementById(weekday[i]);
+            var price = startPrice.innerHTML;
+            var deal = price * theDayOffer;
+           
+            startPrice.innerHTML = Number(deal).toFixed(2);
+            startPrice.style.backgroundColor = "red";
+        }
+    }
+}
+
+
 
 /*Stretch exercises: (increasing tuffness for each number!)
 
