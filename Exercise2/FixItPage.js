@@ -8,27 +8,38 @@
 //1. Link the script with FixIt.hmtl
 //2. Add som tags that doesn't change the visual part of the paragraph.
 //3. Play with the properties at page 124 in the book. 
-function CreateABox(kalle) {
-    var myBox = document.createElement("div");
-    myBox.setAttribute("class", "box");
-    var myDocument = document.getElementsByTagName("body");
-    myDocument[0].appendChild(myBox);
-    myBox.addEventListener('click', kalle, true);
-}
+//function CreateABox(kalle) {
+//    var myBox = document.createElement("div");
+//    myBox.setAttribute("class", "box");
+//    var myDocument = document.getElementsByTagName("body");
+//    myDocument[0].appendChild(myBox);
+//    myBox.addEventListener('click', kalle, true);
+//}
 
-CreateABox(myNewFunction);
+//CreateABox(myNewFunction);
 
-function myNewFunction() {
-    var myArray = new Array();
-    myArray.push(window.screen.width);
-    myArray.push(window.screen.height);
-    alert(myArray);
+//function myNewFunction() {
+//    var myArray = new Array();
+//    myArray.push(window.screen.width);
+//    myArray.push(window.screen.height);
+//    alert(myArray);
+//};
+
+fixSpan();
+
+//   Use properties creatively to display things at the html page
+//4. Add a stylesheet that displays the changed words in fat font and in red.
+function fixSpan() {
+
+    var kalle = document.getElementsByTagName("span");
+    for (var i = 0; i < kalle.length; i++) {
+        kalle[i].style.color = "red";
+        kalle[i].style.fontWeight = "bold";
+    }   
 };
 
 
 
-//   Use properties creatively to display things at the html page
-//4. Add a stylesheet that displays the changed words in fat font and in red.
 //5. PLay with the Methods 
 //### DOM page 126:###
 //6. Play with the DOM-properties
