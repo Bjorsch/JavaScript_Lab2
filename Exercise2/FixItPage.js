@@ -8,22 +8,22 @@
 //1. Link the script with FixIt.hmtl
 //2. Add som tags that doesn't change the visual part of the paragraph.
 //3. Play with the properties at page 124 in the book. 
-//function CreateABox(kalle) {
-//    var myBox = document.createElement("div");
-//    myBox.setAttribute("class", "box");
-//    var myDocument = document.getElementsByTagName("body");
-//    myDocument[0].appendChild(myBox);
-//    myBox.addEventListener('click', kalle, true);
-//}
+function CreateABox(kalle) {
+    var myBox = document.createElement("div");
+    myBox.setAttribute("class", "box1");
+    var myDocument = document.getElementsByTagName("body");
+    myDocument[0].appendChild(myBox);
+    myBox.addEventListener('click', kalle, true);
+}
 
-//CreateABox(myNewFunction);
+CreateABox(myNewFunction);
 
-//function myNewFunction() {
-//    var myArray = new Array();
-//    myArray.push(window.screen.width);
-//    myArray.push(window.screen.height);
-//    alert(myArray);
-//};
+function myNewFunction() {
+    var myArray = new Array();
+    myArray.push(window.screen.width);
+    myArray.push(window.screen.height);
+    alert(myArray);
+};
 
 fixSpan();
 
@@ -38,11 +38,39 @@ function fixSpan() {
     }   
 };
 
-
+CreateABox(myNewFunction2);
 
 //5. PLay with the Methods 
-//### DOM page 126:###
+function CreateABox2(kalle) {
+    var myBox = document.createElement("div");
+    myBox.setAttribute("class", "box2");
+    var myDocument = document.getElementsByTagName("body");
+    myDocument[0].appendChild(myBox);
+    myBox.addEventListener('click', kalle, true);
+}
+
+
+function myNewFunction2() {    
+    alert("Så roligtdet är när det kommer upp en ruta.");
+    print();
+    window.open("http://www.hd.se");
+
+};
+
 //6. Play with the DOM-properties
+//### DOM page 126:###
+DOM();
+function DOM() {
+    var msg = '<p><b>page title: </b>' + document.title + '<br/> ' ;
+    msg += '<b>page address: </b>' +document.URL+ ' <br/>';
+    msg += '<b>last modified : </b> ' + document.lastModified + ' </p>';
+
+    var el = document.getElementById("one");
+    el.innerHTML = msg;
+}
+
+
+
 
 //### String objects page 128, 129: ###
 
