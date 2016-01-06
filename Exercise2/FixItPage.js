@@ -59,13 +59,35 @@ function myNewFunction2() {
 
 //6. Play with the DOM-properties
 //### DOM page 126:###
+
 DOM();
 function DOM() {
     var msg = '<p><b>page title: </b>' + document.title + '<br/> ' ;
     msg += '<b>page address: </b>' +document.URL+ ' <br/>';
     msg += '<b>last modified : </b> ' + document.lastModified + ' </p>';
 
-    var el = document.getElementById("one");
+    var el = document.getElementById("two");
+    el.innerHTML = msg;
+}
+
+//7. Save the the text from the makeMeAnArray-paragraph into an array.
+
+//8. Use all the string methods and propertys allong with the array
+name();
+function name() {
+    
+    var kalle = document.getElementById("makeMeAnArray").innerHTML;
+    var msg = "Length: " + kalle.length + "</br>";
+    msg += "toUpperCase: " + kalle.toUpperCase() + "</br>";
+    msg += "toLowerCase: " + kalle.toLowerCase() + "</br>";
+    msg += "charAt: " + kalle.charAt(kalle.length - 1) + "</br>";
+    msg += "indexO: " + kalle.indexOf(4) + "</br>";
+    msg += "lastIndexOf: " + kalle.lastIndexOf('e') + "</br>";
+    msg += "substring: " + kalle.substring(5, 50) + "</br>";
+    msg += "split: " + kalle.split(' ') + "</br>";
+    msg += "trim: " + kalle.trim() + "</br>";
+    msg += "replace: " + kalle.replace('klo', 'java') + "</br>";
+    var el = document.getElementById("two");
     el.innerHTML = msg;
 }
 
@@ -75,6 +97,7 @@ function DOM() {
 //### String objects page 128, 129: ###
 
 //7. Save the the text from the makeMeAnArray-paragraph into an array.
+
 //8. Use all the string methods and propertys allong with the array
 
 //### String objects page 132: ###
