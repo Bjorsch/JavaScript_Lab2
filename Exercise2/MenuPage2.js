@@ -54,14 +54,14 @@ var Hamburgers = [
     }
 ];
 
-StyleSite(Hamburgers);
+StyleSite(Hamburgers, "burgersPlace");
 
-function StyleSite(listOfBurger) {
+function StyleSite(listOfBurger, byId) {
     for (var i = 0; i < listOfBurger.length; i++) {
 
         var image = document.createElement("img");
         image.src = listOfBurger[i].img;
-        var burger = document.getElementById("burgersPlace");
+        var burger = document.getElementById(byId);
 
         var productDiv = document.createElement("article")
             .appendChild(document.createElement("fieldset"))
@@ -95,7 +95,7 @@ new Product("Fanta", 33, "Thurday", 1.99, "\Images/Drink.png"),
 new Product("Cola Light", 33, "Friday", 1.99, "\Images/Drink.png"),
 new Product("Fanta Light", 33, "Saturday", 1.99, "\Images/Drink.png"),
 new Product("Coffee", 20, "Sundayday", 1.99, "\Images/Drink.png")];
-StyleSite(DrinkList);
+StyleSite(DrinkList, "drinksPlace");
 
 //4. add 7 pizzas to the page using Product.
 var PizzaList = [new Product("Kebab", "Normal", "Monday", 7.99, "\Images/Pizza.png"),
@@ -105,7 +105,7 @@ new Product("CAPRICCIOSA", "Normal", "Thurday", 7.99, "\Images/Pizza.png"),
 new Product("BOLOGNESE", "Normal", "Friday", 7.99, "\Images/Pizza.png"),
 new Product("Q STAGIONE", "Normal", "Saturday", 7.99, "\Images/Pizza.png"),
 new Product("HAWAII", "Normal", "Sundayday", 7.99, "\Images/Pizza.png")];
-StyleSite(PizzaList);
+StyleSite(PizzaList, "pizzaPlace");
 
 //5. add 7 subs to the page using Product.
 var SubList = [new Product("Steak & Cheese", "Normal", "Monday", 5.99, "\Images/Subs.png"),
@@ -115,7 +115,7 @@ new Product("ITALIAN B.M.T.", "Normal", "Thurday", 5.99, "\Images/Subs.png"),
 new Product("CHICKEN TERIYAKI", "Normal", "Friday", 5.99, "\Images/Subs.png"),
 new Product("Sub Beef", "Normal", "Saturday", 5.99, "\Images/Subs.png"),
 new Product("VEGGIE BIFF", "Normal", "Sundayday", 5.99, "\Images/Subs.png")];
-StyleSite(SubList);
+StyleSite(SubList, "subsPlace");
 
 
 //6. GO to file FixIt.html
