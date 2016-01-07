@@ -122,17 +122,30 @@ function ElementInArray() {
 //### Math page 134: ###
 //10. Round one of the numbers in the paragraph up/down
 CreateABox(RoundNumber);
-function RoundNumber(parameters) {
+function RoundNumber() {
     alert(Math.round(array[4]));
 }
 //11. replace the 3rd word with PI then roud it to the nearest integer
 
-function ReplaceWord(parameters) {
-    
+CreateABox(ReplaceWord);
+
+function ReplaceWord() {
+    var nearest = array[2].replace(array[2], Math.PI);
+    alert(Math.round(nearest));
 }
 
 //### Date object###
 //12. Calculate how many days it's until your birthday and present it.
+CreateABox(Birthday);
+function Birthday() {
+    var birthDay= new Date(1981, 5, 9);
+    var today = new Date();
+    birthDay.setFullYear(today.getFullYear());
+    var diff = (birthDay - today) / (1000 * 60 * 60 * 24);
+
+    alert(Math.ceil(diff));
+}
+
 //13. Calculate how many minutes old you are and present it.
 
 
