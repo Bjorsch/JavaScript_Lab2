@@ -3,8 +3,7 @@
 //   use attributes name, size, dayOfTheWeek and price(page. 104 in book)
 //   Please use the same html syntax of an article as in exercise1.
 
-
-var hamburger = [
+var Hamburgers = [
     {
         name: "MondayBurger",
         size: "Small",
@@ -49,14 +48,14 @@ var hamburger = [
     },
     {
         name: "Sunday Burger",
-        size: "Mhm",
+        size: "Large",
         day: "Sunday",
         price: 10.99,
         img: "\Images/Hamburger.png"
     }
 ];
 
-StyleSite(hamburger);
+StyleSite(Hamburgers);
 
 function StyleSite(listOfBurger) {
     for (var i = 0; i < listOfBurger.length; i++) {
@@ -73,17 +72,42 @@ function StyleSite(listOfBurger) {
             .appendChild(document.createTextNode(listOfBurger[i].name)).parentNode.parentNode;
 
         productDiv.appendChild(document.createElement("span")).appendChild(image);
-        productDiv.appendChild(document.createElement("div")).appendChild(document.createTextNode("Price: " + listOfBurger[i].price));
+        productDiv.appendChild(document.createElement("div")).appendChild(document.createTextNode("Price: " + listOfBurger[i].price + "$"));
         productDiv.appendChild(document.createElement("div")).appendChild(document.createTextNode("Size: " + listOfBurger[i].size));
         burger.appendChild(productDiv);        
     }
 }
 
 
-
-
 //2. create Product objects with constructor notation, 
 //   use the parameters name, size, price, dayOfTheWeek  (page. 108 in book)
+var DrinkList = [new Product("LemonTea", 50, "Monday", 1.99, "\Images/Drink.png"),
+new Product("Cola", 33, "Tuesday", 1.99, "\Images/Drink.png"),
+new Product("Sprite", 33, "Wednesday", 1.99, "\Images/Drink.png"),
+new Product("Fanta", 33, "Thurday", 1.99, "\Images/Drink.png"),
+new Product("Cola Light", 33, "Friday", 1.99, "\Images/Drink.png"),
+new Product("Fanta Light", 33, "Saturday", 1.99, "\Images/Drink.png"),
+new Product("Coffee", 20, "Sundayday", 1.99, "\Images/Drink.png")];
+
+function Product(name, size, day, price, img) {
+    this.name = name;
+    this.size = size;
+    this.day = day;
+    this.price = price;
+    this.img = img;
+}
+
+StyleSite(DrinkList);
+
+var PizzaList = [new Product("Kebab", "Normal", "Monday", 7.99, "\Images/Pizza.png"),
+new Product("MARGHERITA", "Normal", "Tuesday", 7.99, "\Images/Pizza.png"),
+new Product("VESUVIO", "Normal", "Wednesday", 7.99, "\Images/Pizza.png"),
+new Product("CAPRICCIOSA", "Normal", "Thurday", 7.99, "\Images/Pizza.png"),
+new Product("BOLOGNESE", "Normal", "Friday", 7.99, "\Images/Pizza.png"),
+new Product("Q STAGIONE", "Normal", "Saturday", 7.99, "\Images/Pizza.png"),
+new Product("HAWAII", "Normal", "Sundayday", 7.99, "\Images/Pizza.png")];
+
+StyleSite(PizzaList);
 //3. add 7 drinks to the page using Product.
 //4. add 7 pizzas to the page using Product.
 //5. add 7 subs to the page using Product.
