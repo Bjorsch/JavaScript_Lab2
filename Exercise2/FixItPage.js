@@ -143,7 +143,7 @@ function Birthday() {
 
 //13. Calculate how many minutes old you are and present it.
 CreateABox(MinutesOld);
-function MinutesOld(parameters) {
+function MinutesOld() {
     var today= new Date();
     var birthDay= new Date(1981,5,9);
     var difference = today.getTime() - birthDay.getTime();
