@@ -51,7 +51,7 @@ function CreateABox2(kalle) {
 
 
 function myNewFunction2() {    
-    alert("Så roligtdet är när det kommer upp en ruta.");
+    alert("Så roligt det är när det kommer upp en ruta.");
     print();
     window.open("http://www.hd.se");
 
@@ -60,48 +60,61 @@ function myNewFunction2() {
 //6. Play with the DOM-properties
 //### DOM page 126:###
 
-DOM();
-function DOM() {
-    var msg = '<p><b>page title: </b>' + document.title + '<br/> ' ;
-    msg += '<b>page address: </b>' +document.URL+ ' <br/>';
-    msg += '<b>last modified : </b> ' + document.lastModified + ' </p>';
+//DOM();
+//function DOM() {
+//    var msg = '<p><b>page title: </b>' + document.title + '<br/> ' ;
+//    msg += '<b>page address: </b>' +document.URL+ ' <br/>';
+//    msg += '<b>last modified : </b> ' + document.lastModified + ' </p>';
 
-    var el = document.getElementById("two");
-    el.innerHTML = msg;
-}
+//    var el = document.getElementById("two");
+//    el.innerHTML = msg;
+//}
 
 //7. Save the the text from the makeMeAnArray-paragraph into an array.
 
 //8. Use all the string methods and propertys allong with the array
-name();
-function name() {
+//name();
+//function name() {
     
-    var kalle = document.getElementById("makeMeAnArray").innerHTML;
-    var msg = "Length: " + kalle.length + "</br>";
-    msg += "toUpperCase: " + kalle.toUpperCase() + "</br>";
-    msg += "toLowerCase: " + kalle.toLowerCase() + "</br>";
-    msg += "charAt: " + kalle.charAt(kalle.length - 1) + "</br>";
-    msg += "indexO: " + kalle.indexOf(4) + "</br>";
-    msg += "lastIndexOf: " + kalle.lastIndexOf('e') + "</br>";
-    msg += "substring: " + kalle.substring(5, 50) + "</br>";
-    msg += "split: " + kalle.split(' ') + "</br>";
-    msg += "trim: " + kalle.trim() + "</br>";
-    msg += "replace: " + kalle.replace('klo', 'java') + "</br>";
-    var el = document.getElementById("two");
-    el.innerHTML = msg;
-}
+//    var makeArray = document.getElementById("makeMeAnArray").innerHTML;
+//    var msg = "Length: " + makeArray.length + "</br>";
+//    //msg += "toUpperCase: " + makeArray.toUpperCase() + "</br>";
+//    //msg += "toLowerCase: " + makeArray.toLowerCase() + "</br>";
+//    //msg += "charAt: " + makeArray.charAt(makeArray.length - 1) + "</br>";
+//    //msg += "indexOF: " + makeArray.indexOf(33) + "</br>";
+//    //msg += "lastIndexOf: " + makeArray.lastIndexOf('e') + "</br>";
+//    msg += "substring: " + makeArray.substring(0, 11) + "</br>";
+//    //msg += "split: " + makeArray.split(' ') + "</br>";
+//    //msg += "trim: " + makeArray.trim() + "</br>";
+//    //msg += "replace: " + makeArray.replace('klo', 'java') + "</br>";
+    
+//    var el = document.getElementById("two");
+//    el.innerHTML = msg;
 
-
-
+    
+//}
 
 //### String objects page 128, 129: ###
 
-//7. Save the the text from the makeMeAnArray-paragraph into an array.
-
-//8. Use all the string methods and propertys allong with the array
-
 //### String objects page 132: ###
 //9. check if the 4th element in the array is a number
+function ElementInArray() {
+    var word = document.getElementById("makeMeAnArray").innerText;
+    word.split(" ");    
+    //if (word) {
+    //    alert('Har ett värde!');
+    //}
+    //else {
+    //    alert('Har INTE ett värde!');
+    //}    
+    if (word[4].isNaN) {
+        alert("Inget Nummer");
+    } else {
+        alert("Nummer");
+    }
+}
+
+ElementInArray();
 
 //### Math page 134: ###
 //10. Round one of the numbers in the paragraph up/down
