@@ -1,6 +1,5 @@
 ﻿/// <reference path="C:\Skola\JavaScript\git\JavaScript_Lab2\Exercise2\FixIt.html" />
 
-
 //For each of the following aplicable exercise below you should present a box on the page 
 //with an alert that shows the result when the box is clicked!
 
@@ -49,7 +48,6 @@ CreateABox(myNewFunction2);
 //    myBox.addEventListener('click', kalle, true);
 //}
 
-
 function myNewFunction2() {    
     alert("Så roligt det är när det kommer upp en ruta.");
     print();
@@ -96,7 +94,6 @@ function name() {
 
     
 }
-
 //### String objects page 128, 129: ###
 
 //### String objects page 132: ###
@@ -116,8 +113,6 @@ function ElementInArray() {
         alert("Nummer");
     }
 }
-
-
 
 //### Math page 134: ###
 //10. Round one of the numbers in the paragraph up/down
@@ -147,5 +142,11 @@ function Birthday() {
 }
 
 //13. Calculate how many minutes old you are and present it.
-
-
+CreateABox(MinutesOld);
+function MinutesOld(parameters) {
+    var today= new Date();
+    var birthDay= new Date(1981,5,9);
+    var difference = today.getTime() - birthDay.getTime();
+    difference = (difference / (1000 * 60));
+    alert(Math.ceil(difference));
+}
