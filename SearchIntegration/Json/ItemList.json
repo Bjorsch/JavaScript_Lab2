@@ -1,0 +1,122 @@
+﻿[
+  {
+    "name":"MondayBurger",
+    "url_image":"Hamburger.PNG",
+    "Category":"Hamburger",
+    "about":"Den finaste och största hamburgaren"
+  },
+  {
+    "name":"Tuesday Burger",
+    "url_image":"Hamburger.PNG",
+    "Category":"Hamburger",
+    "about":"Den finaste och största hamburgaren"
+  },
+  {
+    "name":"Wednesday Burger",
+    "url_image":"Hamburger.PNG",
+    "Category":"Hamburger",
+    "about":"Den finaste och största hamburgaren"
+  },
+  {
+    "name":"Thurday Burger",
+    "url_image":"Hamburger.PNG",
+    "Category":"Hamburger",
+    "about":"Den finaste och största hamburgaren"
+  },
+  {
+    "name":"Friday Burger",
+    "url_image":"Hamburger.PNG",
+    "Category":"Hamburger",
+    "about":"Den finaste och största hamburgaren"
+  },
+  {
+    "name":"MARGHERITA",
+    "url_image":"Pizza.png",
+    "Category":"Pizza",
+    "about":"Den finaste och största Pizza"
+  },  
+  {
+    "name":"Kebab",
+    "url_image":"Pizza.png",
+    "Category":"Pizza",
+    "about":"Den finaste och största Pizza"
+  },
+  {
+    "name":"VESUVIO",
+    "url_image":"Pizza.png",
+    "Category":"Pizza",
+    "about":"Den finaste och största Pizza"
+  },
+  {
+    "name":"CAPRICCIOSA",
+    "url_image":"Pizza.png",
+    "Category":"Pizza",
+    "about":"Den finaste och största Pizza"
+  },  
+  {
+    "name":"HAWAII",
+    "url_image":"Pizza.png",
+    "Category":"Pizza",
+    "about":"Den finaste och största Pizza"
+  },
+  {
+    "name":"Steak & Cheese",
+    "url_image":"Subs.png",
+    "Category":"Sub",
+    "about":"Den finaste och största Sub"
+  },  
+  {
+    "name":"Veggie Delite",
+    "url_image":"Subs.png",
+    "Category":"Sub",
+    "about":"Den finaste och största Sub"
+  },
+  {
+    "name":"SPICY ITALIAN",
+    "url_image":"Subs.png",
+    "Category":"Sub",
+    "about":"Den finaste och största Sub"
+  },
+  {
+    "name":"ITALIAN B.M.T",
+    "url_image":"Subs.png",
+    "Category":"Sub",
+    "about":"Den finaste och största Sub"
+  },  
+  {
+    "name":"CHICKEN TERIYAKI",
+    "url_image":"Subs.png",
+    "Category":"Sub",
+    "about":"Den finaste och största Sub"
+  },
+  {
+    "name":"LemonTea",
+    "url_image":"Drink.png",
+    "Category":"Drink",
+    "about":"Den finaste och största hamburgaren"
+  },
+  {
+    "name":"Cola",
+    "url_image":"Drink.png",
+    "Category":"Drink",
+    "about":"Den finaste och största Drink"
+  },  
+  {
+    "name":"Sprite",
+    "url_image":"Drink.png",
+    "Category":"Drink",
+    "about":"Den finaste och största Drink"
+  },
+  {
+    "name":"Fanta",
+    "url_image":"Drink.png",
+    "Category":"Drink",
+    "about":"Den finaste och största Drink"
+  },
+  {
+    "name":"Coffee",
+    "url_image":"Drink.png",
+    "Category":"Drink",
+    "about":"Den finaste och största Drink"
+  }  
+]

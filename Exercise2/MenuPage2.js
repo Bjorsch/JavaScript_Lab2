@@ -28,7 +28,7 @@ var Hamburgers = [
         img: "\Images/Hamburger.png"
     },
     {
-        name: "Thursday Burger",
+        name: "Thurday Burger",
         size: "TooBig",
         day: "Thursday",
         price: 10.99,
