@@ -1,4 +1,7 @@
-﻿
+﻿/// <reference path="C:\Skola\JavaScript\git\JavaScript_Lab2\Exercise2\FixIt.html" />
+/// <reference path="C:\Skola\JavaScript\git\JavaScript_Lab2\Exercise2\FixIt.html" />
+/// <reference path="C:\Skola\JavaScript\git\JavaScript_Lab2\Exercise2\FixIt.html" />
+
 //1. create 7 hamburger objects using literal notation 
 //   use attributes name, size, dayOfTheWeek and price(page. 104 in book)
 //   Please use the same html syntax of an article as in exercise1.
@@ -57,11 +60,11 @@ var Hamburgers = [
 StyleSite(Hamburgers, "burgersPlace");
 
 function StyleSite(listOfBurger, byId) {
+    var burger = document.getElementById(byId);
     for (var i = 0; i < listOfBurger.length; i++) {
 
         var image = document.createElement("img");
         image.src = listOfBurger[i].img;
-        var burger = document.getElementById(byId);
 
         var productDiv = document.createElement("article")
             .appendChild(document.createElement("fieldset"))
@@ -73,8 +76,11 @@ function StyleSite(listOfBurger, byId) {
         productDiv.appendChild(document.createElement("span")).appendChild(image);
         productDiv.appendChild(document.createElement("div")).appendChild(document.createTextNode("Price: " + listOfBurger[i].price + "$"));
         productDiv.appendChild(document.createElement("div")).appendChild(document.createTextNode("Size: " + listOfBurger[i].size));
-        burger.appendChild(productDiv);        
+        
+        burger.appendChild(productDiv);
+        
     }
+    
 }
 
 //2. create Product objects with constructor notation, 
@@ -119,4 +125,5 @@ StyleSite(SubList, "subsPlace");
 
 
 //6. GO to file FixIt.html
+
 

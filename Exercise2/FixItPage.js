@@ -14,6 +14,13 @@ function CreateABox(kalle) {
     myDocument[0].appendChild(myBox);
     myBox.addEventListener('click', kalle, true);
 }
+function CreateABox2(kalle) {
+    var myBox = document.createElement("div");
+    myBox.setAttribute("class", "box2");
+    var myDocument = document.getElementsByTagName("body");
+    myDocument[0].appendChild(myBox);
+    myBox.addEventListener('click', kalle, true);
+}
 
 CreateABox(myNewFunction);
 
@@ -37,7 +44,7 @@ function fixSpan() {
     }   
 };
 
-CreateABox(myNewFunction2);
+CreateABox2(myNewFunction2);
 
 //5. PLay with the Methods 
 //function CreateABox2(kalle) {
@@ -74,7 +81,7 @@ function DOM() {
 var word = document.getElementById("makeMeAnArray").innerText;
 var array =  word.split(" ");
 //8. Use all the string methods and propertys allong with the array
-CreateABox(name);
+CreateABox2(name);
 function name() {
     
     var myArray = document.getElementById("makeMeAnArray").innerText;
@@ -116,7 +123,7 @@ function ElementInArray() {
 
 //### Math page 134: ###
 //10. Round one of the numbers in the paragraph up/down
-CreateABox(RoundNumber);
+CreateABox2(RoundNumber);
 function RoundNumber() {
     alert(Math.round(array[4]));
 }
@@ -131,7 +138,7 @@ function ReplaceWord() {
 
 //### Date object###
 //12. Calculate how many days it's until your birthday and present it.
-CreateABox(Birthday);
+CreateABox2(Birthday);
 function Birthday() {
     var birthDay= new Date(1981, 5, 9);
     var today = new Date();
