@@ -1,2 +1,79 @@
 ﻿body {
+    background-color: black;
+    color: black;
+
 }
+#searcharea {
+    margin: 0 auto;
+    background-color: darkslategrey;
+    text-align: center;
+    width: 30%;
+    border: 3px solid red;
+    padding: 10px;
+    -ms-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+#searcharea label {
+    font: bold 1.3em Arial;
+    text-transform: uppercase;
+
+}
+#searchdiv {
+    width: 80px;
+}
+#update {
+    margin: 5px auto;
+    width: 80%;
+    border-top: 2px dotted hotpink;
+}
+#update ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+    #update ul li {
+        width: 100%;
+        padding: 0 20px;
+        background-color: #eee;
+        padding-bottom: 10px;
+        height: 100px;
+        overflow: hidden;
+        border-bottom: 1px dotted #ccc;
+        /*animering sen*/
+        -moz-animation: goof 1s;
+        -o-animation: goof 1s;
+        -webkit-animation: goof 1s;
+        animation: goof 1s;
+        -moz-transition: height 0.3s ease-in-out;
+        -o-transition: height 0.3s ease-in-out;
+        -webkit-transition: height 0.3s ease-in-out;
+        transition: height 0.3s ease-in-out;
+    }
+#update li:hover {
+    background-color: #fffce5;
+    height: 250px;
+    min-height: 100px;
+    overflow: visible;
+}
+#update img {
+    float: left;
+    width: 80px;
+    margin-left: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+@-moz-keyframes goof {
+    0%{ opacity: 0.3;}
+    100%{ opacity: 1.0;}
+    }
+
+@-webkit-keyframes goof {
+    0%{ opacity: 0.3;}
+    100%{ opacity: 1.0;}
+    }
+
+@keyframes goof {
+    0%{ opacity: 0.3;}
+    100%{ opacity: 1.0;}
+    }

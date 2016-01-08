@@ -1,9 +1,9 @@
 ﻿[
   {
-    "name":"MondayBurger",
-    "url_image":"Hamburger.PNG",
-    "Category":"Hamburger",
-    "about":"Den finaste och största hamburgaren"
+    "about": "Den finaste och största hamburgaren",
+    "Category": "Hamburger",
+    "name": "MondayBurger",
+    "url_image": "Hamburger.png"
   },
   {
     "name":"Tuesday Burger",
@@ -90,16 +90,16 @@
     "about":"Den finaste och största Sub"
   },
   {
-    "name":"LemonTea",
-    "url_image":"Drink.png",
-    "Category":"Drink",
-    "about":"Den finaste och största hamburgaren"
+    "about": "Den finaste och största Drink",
+    "Category": "Drink",
+    "name": "Lemon Tea",
+    "url_image": "Drink.png"
   },
   {
-    "name":"Cola",
-    "url_image":"Drink.png",
-    "Category":"Drink",
-    "about":"Den finaste och största Drink"
+    "about": "Den finaste och största Drink",
+    "Category": "Drink",
+    "name": "Cola",
+    "url_image": "Drink.png"
   },  
   {
     "name":"Sprite",

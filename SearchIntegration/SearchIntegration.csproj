@@ -81,7 +81,7 @@
     <Content Include="Images\Pizza.png" />
     <Content Include="Images\Subs.PNG" />
     <Content Include="index.html" />
-    <Content Include="Json\ItemList.json" />
+    <Content Include="ItemList.json" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <None Include="Scripts\jquery-2.1.0-vsdoc.js" />
     <Content Include="Scripts\index.js" />
@@ -92,6 +92,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Json\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -2,9 +2,32 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <link href="Style/index.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/index.js"></script>
+
 </head>
 <body>
+    <header>
+        <h1>Meny</h1>
+        <h2>Detaljerad meny</h2>
+        <nav>
+            <span>
+                <input type="button" id="buttonAll" value="Alla Produkter" />
+                <input type="button" id="buttonHamburger" value="Alla Hamburgare" />
+                <input type="button" id="buttonPizza" value="Alla Pizza" />
+                <input type="button" id="buttonDrinks" value="Alla Dricka" />
+                <input type="button" id="buttonSubs" value="Alla Mackor" />
+            </span>
+        </nav>
+    </header>
+    <div>
+        <p>Skriv in kategori namn eller valfri text för att söka efter produkt </p>
+        <label for="search"></label>
+        <input type="search" id="search" name="search" placeholder="Skriv text för att söka produkt" />
+    </div>
+    <div id="update"></div>
 
 </body>
 </html>
