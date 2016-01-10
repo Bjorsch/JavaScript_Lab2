@@ -1,9 +1,9 @@
 ﻿$(document).ready(function () { //Körs när html är färdig laddad
     SearchField();
     $("#search").keydown(function () {
-
+        SearchField();
     });
-    $(".box").click(function () {
+    $(".box").change(function () {
         SearchField();
     });
 });
