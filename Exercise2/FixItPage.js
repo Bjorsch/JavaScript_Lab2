@@ -23,7 +23,6 @@ function CreateABox2(kalle) {
 }
 
 CreateABox(myNewFunction);
-
 function myNewFunction() {
     var myArray = new Array();
     myArray.push(window.screen.width);
@@ -31,10 +30,9 @@ function myNewFunction() {
     alert(myArray);
 };
 
-fixSpan();
-
 //   Use properties creatively to display things at the html page
 //4. Add a stylesheet that displays the changed words in fat font and in red.
+fixSpan();
 function fixSpan() {
 
     var kalle = document.getElementsByTagName("span");
@@ -47,13 +45,6 @@ function fixSpan() {
 CreateABox2(myNewFunction2);
 
 //5. PLay with the Methods 
-//function CreateABox2(kalle) {
-//    var myBox = document.createElement("div");
-//    myBox.setAttribute("class", "box2");
-//    var myDocument = document.getElementsByTagName("body");
-//    myDocument[0].appendChild(myBox);
-//    myBox.addEventListener('click', kalle, true);
-//}
 
 function myNewFunction2() {    
     alert("Så roligt det är när det kommer upp en ruta.");
@@ -66,7 +57,6 @@ function myNewFunction2() {
 //### DOM page 126:###
 
 CreateABox(DOM);
-
 function DOM() {
     var msg = '<p><b>page title: </b>' + document.title + '<br/> ' ;
     msg += '<b>page address: </b>' +document.URL+ ' <br/>';
@@ -88,7 +78,7 @@ function name() {
     var msg = "Length: " + myArray.length + "</br>";
     msg += "toUpperCase: " + myArray.toUpperCase() + "</br>";
     msg += "toLowerCase: " + myArray.toLowerCase() + "</br>";
-    msg += "charAt: " + myArray.charAt(myArray.length - 1) + "</br>";
+    msg += "charAt: " + myArray.charAt(2) + "</br>";
     msg += "indexOF: " + myArray.indexOf(33) + "</br>";
     msg += "lastIndexOf: " + myArray.lastIndexOf('e') + "</br>";
     msg += "substring: " + myArray.substring(0, 11) + "</br>";
@@ -97,9 +87,7 @@ function name() {
     msg += "replace: " + myArray.replace('klo', 'java') + "</br>";
     
     var el = document.getElementById("two");
-    el.innerHTML = msg;
-
-    
+    el.innerHTML = msg;   
 }
 //### String objects page 128, 129: ###
 
@@ -107,13 +95,7 @@ function name() {
 //9. check if the 4th element in the array is a number
 CreateABox(ElementInArray);
 
-function ElementInArray() {       
-    //if (word) {
-    //    alert('Har ett värde!');
-    //}
-    //else {
-    //    alert('Har INTE ett värde!');
-    //}    
+function ElementInArray() {          
     if (array[4].isNaN) {
         alert("Inget Nummer");
     } else {
@@ -130,7 +112,6 @@ function RoundNumber() {
 //11. replace the 3rd word with PI then roud it to the nearest integer
 
 CreateABox(ReplaceWord);
-
 function ReplaceWord() {
     var nearest = array[2].replace(array[2], Math.PI);
     alert(Math.round(nearest));

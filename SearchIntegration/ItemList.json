@@ -1,122 +1,143 @@
 ﻿[
   {
-    "about": "Den finaste och största hamburgaren",
+    "about": "En väldressad 90 grammare med bacon.",
     "Category": "Hamburger",
     "name": "MondayBurger",
-    "url_image": "Hamburger.png"
+    "url_image": "Hamburger.png",
+    "price": 9.90
+
   },
   {
-    "name":"Tuesday Burger",
+    "name":"Magic Bacon Meal",
     "url_image":"Hamburger.PNG",
     "Category":"Hamburger",
-    "about":"Den finaste och största hamburgaren"
+    "about": "Den finaste och största hamburgaren",
+    "price": 9.90
   },
   {
-    "name":"Wednesday Burger",
+    "name":"Big Meal",
     "url_image":"Hamburger.PNG",
     "Category":"Hamburger",
-    "about":"Den finaste och största hamburgaren"
+    "about": "Populär hamburgareportion sen 1977.",
+      "price": 9.90
   },
   {
-    "name":"Thurday Burger",
+    "name":"Pepper Cheese Bacon Meal",
     "url_image":"Hamburger.PNG",
     "Category":"Hamburger",
-    "about":"Den finaste och största hamburgaren"
+    "about": "En av våra senaste hamburgareportioner som snabbt blivit mycket populär.",
+    "price": 9.90
   },
   {
-    "name":"Friday Burger",
+    "name":"Super Cheese Bacon Meal",
     "url_image":"Hamburger.PNG",
     "Category":"Hamburger",
-    "about":"Den finaste och största hamburgaren"
+    "about": "Ännu en riktigt god 150-grammare och dessutom med ost och bacon. Som en cheeseburgare ska smaka.",
+    "price": 9.90
   },
   {
     "name":"MARGHERITA",
     "url_image":"Pizza.png",
     "Category":"Pizza",
-    "about":"Den finaste och största Pizza"
+    "about": "Gourmetsalt, grovmalen svartpeppar",
+      "price": 8.90
   },  
   {
     "name":"Kebab",
     "url_image":"Pizza.png",
     "Category":"Pizza",
-    "about":"Den finaste och största Pizza"
+    "about": "Mozzarellaost, lök, champinjoner, tofukebab, valfri sås",
+    "price": 8.90
   },
   {
     "name":"VESUVIO",
     "url_image":"Pizza.png",
     "Category":"Pizza",
-    "about":"Den finaste och största Pizza"
+    "about": "Mozzarellaost, skinka",
+    "price": 8.90
   },
   {
     "name":"CAPRICCIOSA",
     "url_image":"Pizza.png",
     "Category":"Pizza",
-    "about":"Den finaste och största Pizza"
+    "about": "Mozzarellaost, färska champinjoner, skinka",
+    "price": 8.90
   },  
   {
-    "name":"HAWAII",
+    "name":"Dolce",
     "url_image":"Pizza.png",
     "Category":"Pizza",
-    "about":"Den finaste och största Pizza"
+    "about": "Buffelmozzarella, soltorkade tomater, rostade jordnötter, ananas, pesto, ruccola ",
+    "price": 8.90
   },
   {
     "name":"Steak & Cheese",
     "url_image":"Subs.png",
     "Category":"Sub",
-    "about":"Den finaste och största Sub"
+    "about": "Skivor av mör biff* på nybakat bröd tillsammans med god ost som riktigt smälter i mun. En stund i ugnen, ditt val av grönsaker och din favoritdressing. Steak & Cheese är en toastad dröm helt enkelt. *Sammanfogade bitar av kött.",
+    "price": 7.90
   },  
   {
     "name":"Veggie Delite",
     "url_image":"Subs.png",
     "Category":"Sub",
-    "about":"Den finaste och största Sub"
+    "about": "Krispig och fantastiskt god. Veggie Delite® är en utsökt kombination av färska grönsaker som sallad, tomater, paprika och lök. Som alltid väljer du ditt favoritbröd och din favoritdressing.",
+    "price": 7.90
   },
   {
     "name":"SPICY ITALIAN",
     "url_image":"Subs.png",
     "Category":"Sub",
-    "about":"Den finaste och största Sub"
+    "about": "Spicy Italian serveras på nybakat bröd. Kombinationen av den kryddiga pepperonikorven och salamin kommer garanterat få dina smaklökar att skutta av glädje.",
+    "price": 7.90
   },
   {
     "name":"ITALIAN B.M.T",
     "url_image":"Subs.png",
     "Category":"Sub",
-    "about":"Den finaste och största Sub"
+    "about": "Italian B.M.T.® är en fullmatad sub med salami, pepperonikorv, skinka* och ditt val av grönsaker. Smakrik och generös – en smörgås du knappt kan vänta med att sätta tänderna i.*Sammanfogade bitar av kött.",
+    "price": 7.90
   },  
   {
     "name":"CHICKEN TERIYAKI",
     "url_image":"Subs.png",
     "Category":"Sub",
-    "about":"Den finaste och största Sub"
+    "about": "Denna gourmetsub är en smakrik blandning av teriyakiglaserad kyckling, och dina val av grönsaker. Serveras varm och toastad, på nybakat bröd och tillsammans med din favoritdressing.",
+    "price": 7.90
   },
   {
-    "about": "Den finaste och största Drink",
+    "about": "Iste är en dryck som innehåller kallt te. Drycken är gjord på bl.a svart teextrakt, socker och fruktjuice, till exempel citron.",
     "Category": "Drink",
     "name": "Lemon Tea",
-    "url_image": "Drink.png"
+    "url_image": "Drink.png",
+    "price": 1.90
   },
   {
-    "about": "Den finaste och största Drink",
+    "about": "Coca-Cola är en kolsyrad läskedryck med colasmak som tillverkas av The Coca-Cola Company, grundat 1886 i USA. Coca-Cola säljs i länder över hela världen, och är ett av världens starkaste varumärken.",
     "Category": "Drink",
-    "name": "Cola",
-    "url_image": "Drink.png"
+    "name": "Coca-Cola",
+    "url_image": "Drink.png",
+    "price": 1.90
   },  
   {
     "name":"Sprite",
     "url_image":"Drink.png",
     "Category":"Drink",
-    "about":"Den finaste och största Drink"
+    "about": "Sprite är en kolsyrad läskedryck med citron- och limesmak. Den tillhör The Coca-Cola Companys drycker. Den har sitt ursprung i Tyskland där den kallades Fanta Klare Zitrone och introducerades på den amerikanska marknaden 1961. Sprite säljs i 160 länder",
+    "price": 1.90
   },
   {
     "name":"Fanta",
     "url_image":"Drink.png",
     "Category":"Drink",
-    "about":"Den finaste och största Drink"
+    "about": "Fanta är en läskedryck producerad av The Coca-Cola Company. Namnet kommer från det tyska ordet Fantasie, som betyder fantasi.",
+    "price": 1.90
   },
   {
-    "name":"Coffee",
+    "name":"Kaffe",
     "url_image":"Drink.png",
     "Category":"Drink",
-    "about":"Den finaste och största Drink"
+    "about": "Kaffe är rostade bönor (egentligen bär) från kaffebusken och så kallas även den dryck som tillverkas av dessa bönor. Kaffebusken kommer ursprungligen från subtropiska Afrika och har därifrån exporterats till andra delar av världen",
+    "price": 1.90
   }  
 ]

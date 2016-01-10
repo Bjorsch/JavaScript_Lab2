@@ -1,6 +1,4 @@
 ﻿/// <reference path="C:\Skola\JavaScript\git\JavaScript_Lab2\Exercise2\FixIt.html" />
-/// <reference path="C:\Skola\JavaScript\git\JavaScript_Lab2\Exercise2\FixIt.html" />
-/// <reference path="C:\Skola\JavaScript\git\JavaScript_Lab2\Exercise2\FixIt.html" />
 
 //1. create 7 hamburger objects using literal notation 
 //   use attributes name, size, dayOfTheWeek and price(page. 104 in book)
@@ -70,7 +68,7 @@ function StyleSite(listOfBurger, byId) {
             .appendChild(document.createElement("fieldset"))
             .appendChild(document.createElement("legend"))
             .appendChild(document.createTextNode(listOfBurger[i].day)).parentNode.parentNode
-            .appendChild(document.createElement("h3"))
+            .appendChild(document.createElement("h1"))
             .appendChild(document.createTextNode(listOfBurger[i].name)).parentNode.parentNode;
 
         productDiv.appendChild(document.createElement("span")).appendChild(image);
@@ -79,8 +77,7 @@ function StyleSite(listOfBurger, byId) {
         
         burger.appendChild(productDiv);
         
-    }
-    
+    }    
 }
 
 //2. create Product objects with constructor notation, 
@@ -123,7 +120,4 @@ new Product("Sub Beef", "Normal", "Saturday", 5.99, "\Images/Subs.png"),
 new Product("VEGGIE BIFF", "Normal", "Sundayday", 5.99, "\Images/Subs.png")];
 StyleSite(SubList, "subsPlace");
 
-
 //6. GO to file FixIt.html
-
-

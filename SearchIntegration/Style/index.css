@@ -3,7 +3,7 @@
     color: black;
 
 }
-#searcharea {
+#searcharea{
     margin: 0 auto;
     background-color: darkslategrey;
     text-align: center;
@@ -13,6 +13,7 @@
     -ms-border-radius: 10px 10px 0 0;
     border-radius: 10px 10px 0 0;
 }
+
 #searcharea label {
     font: bold 1.3em Arial;
     text-transform: uppercase;
@@ -23,13 +24,28 @@
 }
 #update {
     margin: 5px auto;
-    width: 80%;
-    border-top: 2px dotted hotpink;
+    width: 70%;
+    /*border-top: 2px dotted hotpink;*/
+}
+.checkBox{
+    margin: 0 auto;
+    background-color: darkslategrey;
+    text-align: center;
+    width: 30%;
+    border: 3px solid red;
+    padding: 10px;
+    -ms-border-radius: 0 0 10px 10px ;
+    border-radius: 0 0 10px 10px ;
+}
+.checkBox label {
+    font: bold 1.3em Arial;
+    margin-left: 30px;
 }
 #update ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-weight: bold;
 
 }
     #update ul li {
@@ -58,7 +74,7 @@
 }
 #update img {
     float: left;
-    width: 80px;
+    width: 100px;
     margin-left: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;

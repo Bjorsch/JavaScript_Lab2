@@ -1,33 +1,34 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <meta charset="utf-8" />
+    <title>JavaScriptSearch</title>
     <link href="Style/index.css" rel="stylesheet" />
-    <script src="Scripts/jquery-2.1.0.min.js"></script>
-    <script src="Scripts/index.js"></script>
-
+    <script src="Scripts/jquery-2.1.0.js"></script>
+    <script src="Scripts/Index.js"></script>
+    <meta charset="utf-8" />
 </head>
 <body>
     <header>
         <h1>Meny</h1>
         <h2>Detaljerad meny</h2>
         <nav>
-            <span>
-                <input type="button" id="buttonAll" value="Alla Produkter" />
-                <input type="button" id="buttonHamburger" value="Alla Hamburgare" />
-                <input type="button" id="buttonPizza" value="Alla Pizza" />
-                <input type="button" id="buttonDrinks" value="Alla Dricka" />
-                <input type="button" id="buttonSubs" value="Alla Mackor" />
-            </span>
+            <div id="searcharea">
+                <label for="search">Sök:</label>
+                <input type="search" name="search" id="search" placeholder="Sök efter produkt: " />
+            </div>
+            <br />
+            <div class="checkBox">
+                <label for="Hamburger">Hamburgare</label>
+                <input type="checkbox" id="Hamburger" checked="checked" class="box"/>
+                <label for="Pizza">Pizza</label>
+                <input type="checkbox" id="Pizza" checked="checked" class="box"/>
+                <label for="Sub">Mackor</label>
+                <input type="checkbox" id="Sub" checked="checked" class="box" />
+                <label for="Drink">Dricka</label>
+                <input type="checkbox" id="Drink" checked="checked" class="box"/>               
+            </div>
         </nav>
     </header>
-    <div>
-        <p>Skriv in kategori namn eller valfri text för att söka efter produkt </p>
-        <label for="search"></label>
-        <input type="search" id="search" name="search" placeholder="Skriv text för att söka produkt" />
-    </div>
     <div id="update"></div>
-
 </body>
 </html>
